@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dati>
+<prodotti>
+    <prodotto>
+        <nome>Winlab Atlantis 45</nome>
+        <materiale>alluminio</materiale>
+        <categoria>Finestre</categoria>
+        <immagine>https://www.fomalpweb.it/wp-content/uploads/2025/05/winlab-atlantis-45.jpg</immagine>
+        <catalogo>
+            https://www.fomalpweb.it/wp-content/uploads/2025/04/Catalogo-Winlab-Atlantis-45.pdf</catalogo>
+        <capitolato></capitolato>
+        <passaporto></passaporto>
+        <schedaTecnica>
+            https://www.fomalpweb.it/wp-content/uploads/2025/05/Scheda-tecnica-atlantis45.pdf</schedaTecnica>
+    </prodotto>
+    <!-- Altri prodotti possono essere aggiunti qui -->
+</prodotti>
+<materiali>
+    <materiale>
+        <nome>alluminio</nome>
+        <categoria>Finestre</categoria>
+    </materiale>
+    <materiale>
+        <nome>pvc</nome>
+        <categoria>Scorrevoli</categoria>
+    </materiale>
+    <!-- Altri materiali possono essere aggiunti qui -->
+</materiali>
+<categorie>
+    <categoria>Finestre</categoria>
+    <categoria>Porte</categoria>
+    <categoria>Scorrevoli</categoria>
+    <categoria>Facciate</categoria>
+    <categoria>Persiane</categoria>
+    <categoria>Frangisole</categoria>
+    <categoria>Vetrate</categoria>
+</categorie>
+/* // Dati dei prodotti organizzati per materiale e categoria
+const productsData = [
+// ALLUMINIO - FINESTRE
+{
+name: "Winlab Atlantis 45",
+material: "alluminio",
+category: ["Finestre"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/05/winlab-atlantis-45.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Catalogo-Winlab-Atlantis-45.pdf",
+capitolato: null,
+passaporto: null,
+schedaTecnica: "https://www.fomalpweb.it/wp-content/uploads/2025/05/Scheda-tecnica-atlantis45.pdf"
+},
+{
+name: "Winlab AW CT 72",
+material: "alluminio",
+category: ["Finestre"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/winlab-72.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Catalogo-AW-CT-72.pdf",
+capitolato:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Capitolato-di-Sistema-WINLAB-CT72.pdf",
+passaporto:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Passaporto-di-Sistema-WINLAB-CT72.pdf",
+schedaTecnica: "https://www.fomalpweb.it/wp-content/uploads/2025/05/Scheda-Tecnica-WindowLab-72.pdf"
+},
+{
+name: "Winlab AW CT 72 BS",
+material: "alluminio",
+category: ["Finestre"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/winlab-72-bs.jpg",
+catalogo: null,
+capitolato: "https://www.fomalpweb.it/wp-content/uploads/2025/04/5-Capitolato-WINLAB-72-BS.pdf",
+passaporto:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Passaporto-di-Sistema-WINDOWLAB-72-BS.pdf",
+schedaTecnica:
+"https://www.fomalpweb.it/wp-content/uploads/2025/05/Scheda-Tecnica-WindowLab-72-BS.pdf"
+},
+{
+name: "Schüco AWS 75 BS",
+material: "alluminio",
+category: ["Finestre"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/aws-75-bs-hi.jpg",
+catalogo:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Schueco-Fenstersystem-AWS-75-BS.SI_.pdf",
+capitolato:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Capitolato-di-Sistema-AWS-75-BS.pdf",
+passaporto:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Passaporto-di-Sistema-AWS-75-BS.pdf",
+schedaTecnica:
+"https://www.fomalpweb.it/wp-content/uploads/2025/05/Scheda-Tecnica-Schuco-Aws-75-BS.pdf"
+},
+{
+name: "Schüco AWS 75 SI",
+material: "alluminio",
+category: ["Finestre"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/aws-75-si.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/04/fomalp_Schueco_AWS_75_HI.pdf",
+capitolato:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Capitolato-di-Sistema-Aws-75-SI.pdf",
+passaporto:
+"https://www.fomalpweb.it/wp-content/uploads/2025/05/Passaporto-di-Sistema-AWS-75-SI.pdf",
+schedaTecnica:
+"https://www.fomalpweb.it/wp-content/uploads/2025/05/Scheda-Tecnica-Schuco-Aws-75-SI.pdf"
+},
+
+// ALLUMINIO - PORTE
+{
+name: "Winlab ADS 70 HI",
+material: "alluminio",
+category: ["Porte"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/ads-70-hi.jpg",
+catalogo: null,
+capitolato:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Capitolato-di-Sistema-ADS-70-HI.pdf",
+passaporto:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Passaporto-di-Sistema-ADS-70-HI.pdf",
+schedaTecnica:
+"https://www.fomalpweb.it/wp-content/uploads/2025/06/Scheda-Tecnica-Schuco-Ads-70-.pdf"
+},
+{
+name: "Winlab ADS 75",
+material: "alluminio",
+category: ["Porte"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/ads-75.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/04/fomalp_shueco_ADS_75.pdf",
+capitolato: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Capitolato-di-Sistema-ADS-75.pdf",
+passaporto: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Passaporto-di-Sistema-ADS-75.pdf",
+schedaTecnica:
+"https://www.fomalpweb.it/wp-content/uploads/2025/05/Scheda-Tecnica-Schuco-Ads-75-.pdf"
+},
+
+// ALLUMINIO - SCORREVOLI
+{
+name: "Winlab ASS 41",
+material: "alluminio",
+category: ["Scorrevoli"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/ass-41.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/04/catalogo_ass_41_sc.pdf",
+capitolato: "https://www.fomalpweb.it/wp-content/uploads/2025/04/capitolato_ASS_41SC.pdf",
+passaporto: null,
+schedaTecnica: "https://www.fomalpweb.it/wp-content/uploads/2025/06/Scheda-Tecnica-Ass-41.pdf"
+},
+{
+name: "Winlab ASE 51 PD",
+material: "alluminio",
+category: ["Scorrevoli"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/ase-51-pd.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Catalogo-ASE-51-PD.pdf",
+capitolato: "https://www.fomalpweb.it/wp-content/uploads/2025/04/capitolato-ase-51-pd.pdf",
+passaporto: null,
+schedaTecnica: null
+},
+{
+name: "Winlab ASE 60",
+material: "alluminio",
+category: ["Scorrevoli"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/ase-60.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/04/fomalp_Schueco_ASE_60.pdf",
+capitolato: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Capitolato-di-Sistema-ASE-60.pdf",
+passaporto: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Passaporto-di-Sistema-ASE-60.pdf",
+schedaTecnica: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Scheda-tecnica-ASE-60.pdf"
+},
+{
+name: "Winlab ASE 67 PD",
+material: "alluminio",
+category: ["Scorrevoli"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/67-PD.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/04/fomalp_Schueco_ASE_67_PD.pdf",
+capitolato:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Capitolato-di-Sistema-ASE-67PD.pdf",
+passaporto:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Passaporto-di-Sistema-ASE-67PD.pdf",
+schedaTecnica: "https://www.fomalpweb.it/wp-content/uploads/2025/06/Scheda-Tecnica-Ase-67.pdf"
+},
+
+// ALLUMINIO - FACCIATE
+{
+name: "Winlab FWS 50-60",
+material: "alluminio",
+category: ["Facciate"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/fws-50-60.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/04/fomalp_shueco_FWS_50_60.pdf",
+capitolato:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Capitolato-di-Sistema-FWS-50_60.pdf",
+passaporto: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Passaporto-di-Sistema-FWS-50.pdf",
+schedaTecnica: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Scheda-tecnica-FWS-50-60.pdf"
+},
+{
+name: "Winlab FWS 50-60 SG",
+material: "alluminio",
+category: ["Facciate"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/fws-sg.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/04/fomalp_shueco_FWS_50_60_SG_85.pdf",
+capitolato:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Capitolato-di-Sistema-FWS-50-SG.pdf",
+passaporto:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Passaporto-di-Sistema-FWS-50_60-SG.pdf",
+schedaTecnica: null
+},
+{
+name: "Winlab SFC 85",
+material: "alluminio",
+category: ["Facciate"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/SFC-85.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/05/SCHUCO-SFC-85-Technical.pdf",
+capitolato: null,
+passaporto: null,
+schedaTecnica: null
+},
+
+// PVC - FINESTRE
+{
+name: "Schüco Corona CT 70 AS",
+material: "pvc",
+category: ["Finestre"],
+image:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Corona_CT_70_AS_Classic_s3-2048x2048-1.jpg",
+catalogo:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/catalogo-schueco_corona_ct_70_classic.pdf",
+capitolato:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Capitolato-di-Sistema-CORONA-CT70.pdf",
+passaporto: "https://www.fomalpweb.it/wp-content/uploads/2025/04/passaporto-ct70_en.pdf",
+schedaTecnica: null
+},
+{
+name: "Schüco Living 82",
+material: "pvc",
+category: ["Finestre"],
+image:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/Schueco_LivIng_AS_300dpi-2048x2048-1.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/05/schueco_living_P4150.pdf",
+capitolato: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Catalogo-Living.pdf",
+passaporto:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/passaporto-Schuco-LivIng-IFT-ROSENHEIM.pdf",
+schedaTecnica: null
+},
+{
+name: "Schüco Symbiotic",
+material: "pvc",
+category: ["Finestre"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/symbiotic.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Catalogo-Symbiotic.pdf",
+capitolato: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Schuco-Symbiotic.pdf",
+passaporto:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/passaporto-en_Serie416_Schueco_EasySlide_CT_70_HS.pdf",
+schedaTecnica: null
+},
+
+// PVC - SCORREVOLI
+{
+name: "Schüco EasySlide New Generation",
+material: "pvc",
+category: ["Scorrevoli"],
+image: "https://www.fomalpweb.it/wp-content/uploads/2025/04/EasySlide_s_neue_Generation.jpg.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Catalogo_schueco_easyslide.pdf",
+capitolato: "https://www.fomalpweb.it/wp-content/uploads/2025/05/Capitolato-EasySlide.pdf",
+passaporto:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/passaporto-en_Serie416_Schueco_EasySlide_CT_70_HS.pdf",
+schedaTecnica: "https://www.fomalpweb.it/wp-content/uploads/2025/04/scheda-tecnica-Easy_slide.pdf"
+},
+{
+name: "Schüco SoftSlide",
+material: "pvc",
+category: ["Scorrevoli"],
+image:
+"https://www.fomalpweb.it/wp-content/uploads/2025/04/SoftSlide_e_Fixframe_02-1-scaled-1-2048x2048-1.jpg",
+catalogo: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Catalogo-SoftSlide.pdf",
+capitolato: "https://www.fomalpweb.it/wp-content/uploads/2025/04/Schuco-SoftSlide-1.pdf",
+passaporto: null,
+schedaTecnica: null
+}
+];
+*/
